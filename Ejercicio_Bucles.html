@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="font-size: 1em;" >
+    <h1 >Descubre el número aleatorio:</h1>
+    <script  type="text/javascript">
+
+      let numero1= Math.floor(Math.random ()*101);
+
+     let numero2=prompt("Introduzca un número");
+
+     let intentos=1;
+
+while(numero1!=numero2) {
+
+intentos++;
+
+if (numero1>numero2) {
+
+alert("El número introducido es MENOR que el SECRETO");
+numero2=prompt("Introduce un nuevo número, por favor");
+}
+
+else if (numero1<numero2) {
+
+alert("El número introducido es MAYOR que el SECRETO");
+numero2=prompt("Introduce un nuevo número, por favor");
+
+}
+
+}
+
+document.write("El número secreto era el " + numero1 + "<br>");
+
+document.write ("Enhorabuena lo has obtenido en " + intentos + " intentos");
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+    </script>
+
+    
+</body>
+</html>
