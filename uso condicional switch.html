@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="font-size: 2em ;">
+    <script type="text/javascript">
+
+        let opcion=parseInt(prompt("Introduce la opición deseada (1, 2, 3)"));
+         
+        /*el valor 1, 2, 3 está introducido como texto.
+        if else /else if gasta el operador == compara sólo el valor.
+        switch case gasta el operador === compara valor y tipo.*/
+
+        switch (opcion){
+            /*switch case es estricto con el valor y el "tipo":
+
+            1-una solución es poner el valor como string "1"
+            2-almacenar en el prompt un valor númerico transformar el valor
+            de texto a número, de "1" a 1. Con la función global parseInt() o el método
+            Number.parseInt() */
+            case 1:
+                document.write ("Has escogido la opción 1");
+                break;
+
+            case 2:
+                document.write ("Has escogido la opción 2");
+                break;
+             
+            case 3:
+                document.write ("Has escogido la opción 3");
+                break;
+            
+            default:
+            document.write ("Opción incorrecta");   
+
+                 
+            }
+
+
+     </script>
+    
+</body>
+</html>
