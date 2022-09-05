@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="font-size: 2em;">
+
+<script>
+
+
+let mail = prompt("Introduce el email, por favor");
+
+let arroba=false;
+
+
+
+for(let i=0; i<=mail.length; i++){
+
+    document.write("Evaluando carácter " + i +" del email <br>");
+
+
+
+
+    if (mail[i]=="@") {
+
+
+         arroba= true;
+
+        document.write(`ARROBA ENCONTRADA EN EL CARÁCTER  ${i}`);
+
+        break; 
+
+
+
+    }
+
+     
+}
+
+if(arroba){        // poner el nombre de la variable sólo. El lenguaje ya entiende que es una comparación boleana arroba==true
+
+    document.write("<br> Mail Correcto");
+
+
+}
+
+else{
+
+    document.write("Mail incorrecto");
+
+}
+
+</script>
+  
+</body>
+</html>
