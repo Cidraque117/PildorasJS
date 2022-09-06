@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="font-size: 2em;">
+
+<script>
+
+let ciudades= [["Bogotá","Medellín", "Cali"], ["Barcelona", "Madrid", "Malaga"], ["Roma", "Milan", "Venecia"]];
+
+
+bucleprincipal: for(let i=0; i<3; i++){ /* Se le pone la etiqueta (label) "bucleprincipal" que identifica el bucle principal, y así le 
+
+decimos al break de donde tiene que salir, o que bucle tiene que romper */
+
+
+
+
+     for(let j=0; j<3; j++){ 
+        
+        
+        
+        document.write(ciudades[i][j] + "<br>") ;
+
+
+
+        
+        if(ciudades[i][j] == "Madrid") break bucleprincipal;
+
+
+    }
+
+
+}
+ 
+
+
+
+
+
+</script>
+  
+</body>
+</html>
