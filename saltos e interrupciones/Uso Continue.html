@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="font-size: 2em;">
+
+
+
+
+
+    <script>
+
+        let num_trabajador=0;
+
+        /* Esta variable simplemente se crea para que en el mensaje de promp aparezca desde el trabajador 1 en adelante, y en el
+        document.write del bucle for of no aparezca en la primera posición undefined. Sin la variable num_trabajador el for se queda así:
+        for(let i=1; i<6; i++){
+
+            let salario= prompt("Introduce salario del trabajador " + i);} de esta manera el prompt empieza a llamar por el trabajador 1,
+            PEEEEERO en el bucle siguiente for of que cicla todo el array salarios, la primera posición es el 0 y aparecería como undefined.
+        */
+        let salarios=[];
+
+        for(let i=0; i<5; i++){
+
+
+            num_trabajador+=1;
+
+            let salario= prompt("Introduce salario del trabajador " + num_trabajador);
+
+
+
+        if (salario<1000) continue;
+        
+        
+        /*si un salario es menor que 1000 no aplicará la deducción y saltará la proxima iteración. La diferencia
+        con el break, es que el break se sale directamente del bucle por ejemplo en el i(2) y no continua. El Continue, si el i(2) es menor
+        de 1000 no aplicará la deducción pero pasará al i(3) que si es igual o mayor si que la aplicará. Dicho esto, el programa no tiene mucho
+        sentido pues cuando llega i(2) que puede ser 900 entra en el if y pasa a continue. con lo cual la siguiente instrucción no se realiza.
+        Con lo cual no se esta almacenando ningún numero en el array, por lo que en el for of mostrará undefined*/
+
+
+
+            salarios[i]=salario-(salario*0.25); //deducción del 25%
+
+
+        }
+
+
+        for(salario of salarios){
+
+
+           // if (!salario) continue; // sin salario, si se ha apretado aceptar entonces sigue, no me imprimas un cero o undefined en este caso.
+
+
+
+            document.write(salario + "<br>");
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
