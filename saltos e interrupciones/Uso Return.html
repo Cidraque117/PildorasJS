@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="font-size: 2em;">
+
+
+    <script>
+
+        document.write("Texto de ejemplo 1 <br>");
+
+        document.write("Texto de ejemplo 2 <br>");
+
+
+        function calculo(operador1, operador2){ 
+
+
+
+            if (isNaN(operador1) ||isNaN(operador2)){ //FUNCION ISNaN ( Pregunta si es o no un numero, boleano)
+
+
+                return "Imposible calcular, uno de los valores no es numérico"
+
+            }
+
+
+                 return operador1 + operador2; /*no es necesario el else, pq si son un numero los dos valores no se cumple el if,
+                 con lo cual saltaria al return operador1 + operador2 */
+
+
+
+
+
+
+
+            /*
+            let resultado=operador1 + operador2;
+
+            
+            return resultado; //EJemplo de como el return funciona como salto, pues sale de la función sin ejecutar la linea o lineas
+            // de abajo.
+            
+            document.write("Se ha ejecutado la función <br>");*/
+            
+        }
+
+
+
+        document.write("Texto de ejemplo 3 <br>");
+
+        document.write("Texto de ejemplo 4 <br>");
+
+
+    
+       document.write("El resultado es: " + calculo(235, 10));
+
+
+
+
+       
+        
+        
+
+
+
+
+
+
+
+
+    </script>
+
+
+    
+</body>
+</html>
