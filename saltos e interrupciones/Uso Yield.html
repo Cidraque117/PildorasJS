@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="font-size: 2em;">
+
+
+    <script>    
+    
+    function* rango(desde, hasta){ // function* creamos un GENERADOR (similar a una función)
+
+
+
+        for (let i=desde; i<=hasta; i++){
+
+
+            yield i; //Similar a return pero en lugar de pasarnos todos los valores de golpe lo hace uno a uno.
+                    //Con el consiguiente ahorro de recursos. Sólo nos hacen falta algunos valores.
+                
+
+
+        }
+
+    }
+    
+    let numero= rango(5, 15);
+
+    document.write(numero.next().value + "<br>");
+
+
+    // pueden haber muchas lineas de código entre ellas.
+
+    document.write(numero.next().value + "<br>");
+  
+
+
+
+    
+    
+    
+    </script>
+    
+</body>
+</html>
