@@ -12,6 +12,59 @@
 
 
 
+
+
+
+        function factor(num) {
+
+            
+            
+            
+            // el throw da un salto y no se ejectura lo siguiente, el error debemos capturarlo con try/ catch (se verá más adelante)
+
+            try{
+
+            if(num<0) throw new Error ("Imposible calcular el factorial de un número negativo");
+        
+            }
+
+            catch(e){
+
+                document.write("Imposible calcular el factorial del número negativo ");
+
+
+            }
+        
+
+            let result;
+
+            for (result=num; num>1; num--){
+
+                result= result* (num-1);
+
+
+            }
+            
+            return result;
+
+            
+        }
+
+        let userNum = parseInt(prompt("Introduce un número"));
+
+
+
+        document.write(factor(userNum));
+
+
+        
+        
+
+
+        
+
+
+
         
 
 
